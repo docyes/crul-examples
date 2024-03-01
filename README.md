@@ -123,7 +123,7 @@ seed ```json
 
 # Retrieval Commands
 
-Are used to retrieve data from a web source, such as REST, SOAP, GraphQL, Web Browser, etc. Authenticaiton can be handled by the `oauth`, `--bearer` and secure storage vault.
+Are used to retrieve data from a web source, such as REST, SOAP, GraphQL, Web Browser, etc. Authenticaiton can be handled by the `oauth`, command using the secure storage vault and/or via other custom authentication methods.
 
 # REST API (Retrieval Command)
 
