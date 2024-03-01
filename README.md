@@ -31,6 +31,11 @@ An argument can be a boolean, string or number. Strings with special chararacter
 
 A flag can be a boolean, string or number. Strings with special chararacters can be escaped with enclosing quotes either single `'`, double `"` or <code>\`\`\`</code> triple quotes.  Some commands support multiple flags with the same name and order is preserved.
 ```bash
+
+
+# Tabulation (Flattening)
+
+Crul flattens hierarchical data structures into tabular like data structures to simplify the process of shaping and transforming data sets for consumption by other commands and/or sending results to other stores (s3, snowflake, databricks, etc...).
 --table key1
 ```
 
