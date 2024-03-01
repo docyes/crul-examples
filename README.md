@@ -129,4 +129,9 @@ Are used to retrieve data from a web source, such as REST, SOAP, GraphQL, Web Br
 
 The `api` command allows you to make REST requests to an endpoint, and returns the response in a tabular form. Currently this command supports XML, CSV, Parquet, ZIP, GZIP, Octet-Stream, Text and JSON response formats with unsupported formats returned as raw data.
 
+## Example
+
+```bash
+api get https://api.github.com/orgs/cisco/members
+```
 
