@@ -131,6 +131,8 @@ The `api` command allows you to make REST requests to an endpoint, and returns t
 
 ## Example
 
+Get all the cisco github repo members.
+
 ```bash
 api get https://api.github.com/orgs/cisco/members
 ```
@@ -138,6 +140,10 @@ api get https://api.github.com/orgs/cisco/members
 # GraphQL Retrieval Command
 
 The `graphql` command allows you to make a query against an GraphQL API.
+
+## Example
+
+Get all the upcomming SpaceX launches.
 
 ```bash
 graphql https://spacex-production.up.railway.app 'query SpaceXQuery {
