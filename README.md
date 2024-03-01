@@ -21,7 +21,7 @@ seed
 
 ### Argument
 
-An argument can be a boolean, string or number. Strings with special chararacters can be escaped with enclosing quotes either single `'`, double `"` or `\`\`\`` triple quotes. 
+An argument can be a boolean, string or number. Strings with special chararacters can be escaped with enclosing quotes either single `'`, double `"` or ````` triple quotes. 
 
 ```bash
 `{ key1: "value1", key2: "value2" }`
