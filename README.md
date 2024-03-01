@@ -40,7 +40,7 @@ Crul flattens hierarchical data structures into tabular datasets to simplify the
 
 ## Example
 
-```bash
+````bash
 seed ```
 {
   key: "value",
@@ -49,8 +49,7 @@ seed ```
   }
 }
 ```
-
-```
+````
 
 
 
