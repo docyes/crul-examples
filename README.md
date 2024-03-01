@@ -10,7 +10,7 @@ In this example the `seed` command generates a table of key value/pairs based on
 seed '{ key1: "value1", key2: "value2" }' --table key1
 ```
 
-## Name
+### Name
 
 A command name is a string with no spaces that denotes some form of action to perform.
 
@@ -19,14 +19,15 @@ ex.,
 seed
 ```
 
-## Argument
+### Argument
 
-Argy
+An argument can be a boolean, string or number. Strings with special chararacters can be escaped with enclosing quotes either single `'`, double `"` or `\`\`\`` triple quotes. 
+
 ```bash
 `{ key1: "value1", key2: "value2" }`
 ```
 
-## Flag
+### Flag
 ```bash
 --table key1
 ```
