@@ -62,6 +62,7 @@ seed ```json
 
 Data structures can have a collection of multiple items assigned to single key name. In the flattening process of hierarchical data structures with a key having multple items assigned to it (collection), the namespace will be prefixed with a zero-based numerical index. 
 
+## Example 
 
 ````bash
 seed ```json
@@ -80,3 +81,29 @@ seed ```json
 | root    | collection.0.key | collection.1.key |
 | -------- | ------- | ------- |
 | this is the root | value 1 | value 2 |
+
+# Nested Collection Row Conversion
+
+Data structures that have a collection of multiple items assigned to single key name can be expanded into multiple rows. Using the `normalize` a prefix can be normalized into multiple roles including the shared keys at the root level.  
+
+## Example
+
+````bash
+seed ```json
+{
+  root: "this is the root",
+  collection: [
+    {key: "value 1"},
+    {key: "value 2"}
+  ]
+}
+```
+|| normalize collection
+````
+
+## Results
+
+| root    | key | 
+| -------- | ------- | 
+| this is the root | value 1 | 
+| this is the root | value 2 | 
