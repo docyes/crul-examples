@@ -60,7 +60,7 @@ seed ```json
 
 # Nested Collections 
 
-Data structures can have a collection of multiple items assigned to single key name. In the flattening process of hierarchical data structures if a key has multple items assigned to it (collection), the namespace will be prefixed with a zero-based numerical index. 
+Data structures can have a collection of multiple items assigned to single key name. In the flattening process of hierarchical data structures with a key having multple items assigned to it (collection), the namespace will be prefixed with a zero-based numerical index. 
 
 
 ````bash
@@ -75,3 +75,8 @@ seed ```json
 ```
 ````
 
+## Result
+
+| root    | collection.0.key | collection.1.key |
+| -------- | ------- | ------- |
+| this is the root | value 1 | value 2 |
