@@ -34,7 +34,7 @@ A flag can be a boolean, string or number. Strings with special chararacters can
 --table key1
 ```
 
-# Tabulation (Flattening)
+# Object Flattening (Tabulation)
 
 Crul flattens hierarchical data structures into tabular datasets to simplify the process of filtering, shaping and transforming.
 
@@ -58,5 +58,20 @@ seed ```json
 | root key value  | nested key value |
 
 
+# Nested Collections 
 
+Data structures can have a collection of multiple items assigned to single key name. In the flattening process of hierarchical data structures if a key has multple items assigned to it (collection), the namespace will be prefixed with a zero-based numerical index. 
+
+
+````bash
+seed ```json
+{
+  root: "this is the root",
+  collection: [
+    {key: "value 1"},
+    {key: "value 2"}
+  ]
+}
+```
+````
 
