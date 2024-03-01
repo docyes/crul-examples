@@ -139,7 +139,7 @@ api get https://api.github.com/orgs/cisco/members
 
 # GraphQL Retrieval Command
 
-The `graphql` command allows you to make a query against an GraphQL API.
+The `graphql` command allows you to make a query against a GraphQL API.
 
 ## Example
 
@@ -161,4 +161,23 @@ graphql https://spacex-production.up.railway.app 'query SpaceXQuery {
   }
 }'
 || normalize launchesUpcoming
+```
+
+# SOAP Retrieval Command
+
+The `soap` command allows you to make a query against a SOAP service using a WSDL.
+
+## Example
+
+Get all the Workday signons. 
+
+```bash
+oauth --credential workday
+|| soap '{
+  "Request_Criteria": {"From_DateTime": "2023-07-17T12:15:00-07:00", "To_DateTime": "2023-07-17T13:15:00-07:00"},
+  "Response_Filter": { "Page": 1, "Count": 100, "As_Of_Entry_DateTime": "2023-07-17T12:15:00-07:00" }
+}'
+--wsdl Identity_Management_edit
+--method "Get_Workday_Account_Signons"
+--security.bearer "$token.access_token$"
 ```
