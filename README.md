@@ -27,7 +27,6 @@ seed '{ key1: "value1", key2: "value2" }' --table key1
 
 A command name is a string with no spaces that denotes some form of action to perform.
 
-ex.,
 ```bash
 seed
 ```
@@ -43,6 +42,7 @@ Arguments can be optional or required with multiple values seperated by a space.
 ### Flag(s)
 
 A flag can be a boolean, string or number. Strings with special chararacters can be escaped with enclosing quotes either single `'`, double `"` or <code>\`\`\`</code> triple quotes.  Some commands support multiple flags with the same name and order is preserved.
+
 ```bash
 --table key1
 ```
