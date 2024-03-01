@@ -84,7 +84,7 @@ seed ```json
 
 # Nested Collection Row Conversion
 
-Data structures that have a collection of multiple items assigned to single key name can be expanded into multiple rows. Using the `normalize` a prefix can be normalized into multiple roles including the shared keys at the root level.  
+Data structures that have a collection of multiple items assigned to single key name can be expanded into multiple rows using the `normalize` command. A prefix can be normalized into multiple roles including the shared keys at the root level.  
 
 ## Example
 
