@@ -1,6 +1,6 @@
 # Commands
 
-A `command` has a name, optional `argument(s)` and optional `flag(s)`:
+A command has a `name`, optional `argument(s)` and optional `flag(s)`:
 
 ## Example
 
