@@ -123,9 +123,9 @@ seed ```json
 
 # Retrieval Commands
 
-Are used to retrieve data from a web source, such as REST, SOAP, GraphQL, Web Browser, etc.
+Are used to retrieve data from a web source, such as REST, SOAP, GraphQL, Web Browser, etc. Authenticaiton can be handled by the `oauth`, `--bearer` and secure storage vault.
 
-# API Retrieval Command
+# REST API (Retrieval Command)
 
 The `api` command allows you to make REST requests to an endpoint, and returns the response in a tabular form. Currently this command supports XML, CSV, Parquet, ZIP, GZIP, Octet-Stream, Text and JSON response formats with unsupported formats returned as raw data.
 
@@ -137,7 +137,7 @@ Get all the cisco github repo members.
 api get https://api.github.com/orgs/cisco/members
 ```
 
-# GraphQL Retrieval Command
+# GraphQL (Retrieval Command)
 
 The `graphql` command allows you to make a query against a GraphQL API.
 
@@ -163,7 +163,7 @@ graphql https://spacex-production.up.railway.app 'query SpaceXQuery {
 || normalize launchesUpcoming
 ```
 
-# SOAP Retrieval Command
+# SOAP (Retrieval Command)
 
 The `soap` command allows you to make a query against a SOAP service using a WSDL.
 
