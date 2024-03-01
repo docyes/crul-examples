@@ -19,17 +19,17 @@ ex.,
 seed
 ```
 
-### Argument
+### Argument(s)
 
-An argument can be a boolean, string or number. Strings with special chararacters can be escaped with enclosing quotes either single `'`, double `"` or <code>\`\`\`</code> triple quotes. 
+An argument can be a boolean, string or number. Strings with special chararacters can be escaped with enclosing quotes either single `'`, double `"` or <code>\`\`\`</code> triple quotes. Arguments can be optional or required with multiple values seperated by a space.
 
 ```bash
 `{ key1: "value1", key2: "value2" }`
 ```
 
-### Flag
+### Flag(s)
 
-A flag can be a boolean, string or number. Strings with special chararacters can be escaped with enclosing quotes either single `'`, double `"` or <code>\`\`\`</code> triple quotes. 
+A flag can be a boolean, string or number. Strings with special chararacters can be escaped with enclosing quotes either single `'`, double `"` or <code>\`\`\`</code> triple quotes.  Some commands support multiple flags with the same name and order is preserved.
 ```bash
 --table key1
 ```
