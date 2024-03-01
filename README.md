@@ -121,11 +121,11 @@ seed ```json
 | this is the root | value 1 | 
 | this is the root | value 2 | 
 
-## Retrieval Commands
+# Retrieval Commands
 
 Are used to retrieve data from a web source, such as REST, SOAP, GraphQL, Web Browser, etc.
 
-## API Retrieval Command
+# API Retrieval Command
 
 The `api` command allows you to make REST requests to an endpoint, and returns the response in a tabular form. Currently this command supports XML, CSV, Parquet, ZIP, GZIP, Octet-Stream, Text and JSON response formats with unsupported formats returned as raw data.
 
@@ -135,3 +135,24 @@ The `api` command allows you to make REST requests to an endpoint, and returns t
 api get https://api.github.com/orgs/cisco/members
 ```
 
+# GraphQL Retrieval Command
+
+The `graphql` command allows you to make a query against an GraphQL API.
+
+```bash
+graphql https://spacex-production.up.railway.app 'query SpaceXQuery {
+  launchesUpcoming (limit: 100) {
+    id
+    mission_name
+    launch_date_unix
+    launch_success    
+    rocket {
+      rocket_name
+      rocket {
+        wikipedia
+      }
+    }    
+  }
+}'
+|| normalize launchesUpcoming
+```
