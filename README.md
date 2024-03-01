@@ -4,7 +4,7 @@ A command has a `name`, optional `argument(s)` and optional `flag(s)`:
 
 ## Example
 
-In this example the `seed` command generates a table of key value/pairs based on the first argument of a JSON string followed by a flag that only shows the key1 column.
+In this example the `seed` command generates a table of key value/pairs based on the first `argument` of a JSON string followed by a `flag` that only shows the key1 column.
 
 ```bash
 seed '{ key1: "value1", key2: "value2" }' --table key1
