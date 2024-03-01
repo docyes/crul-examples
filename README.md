@@ -41,14 +41,14 @@ Crul flattens hierarchical data structures into tabular datasets to simplify the
 ## Example
 
 ```bash
-seed ```
+seed \```
 {
   key: "value",
   nested: {
     key: "value" 
   }
 }
-```
+\```
 ```
 
 
