@@ -1,3 +1,16 @@
+# Queries
+
+The main way to use crul is through authoring and running queries. These queries are composed of one or more stages, "piped" together using the double pipe `||` syntax.
+
+# Grammar
+
+Queries can be broken up into 3 distinct parts:
+1. Query itself
+2. Individual stages
+3. Command run in a stage (one of the commands in the crul query language)
+
+Each stage runs sequentially, and operates on the results of the previous stage.
+
 # Commands
 
 A command has a `name`, optional `argument(s)` and optional `flag(s)`:
