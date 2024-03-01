@@ -181,3 +181,25 @@ oauth --credential workday
 --method "Get_Workday_Account_Signons"
 --security.bearer "$token.access_token$"
 ```
+
+# Web Browser DOM (Retrieval Command)
+
+## Example
+
+Open hacker news in a web browser and get the DOM interpreted and rendered HTML elements.
+
+```bash
+open https://news.ycombinator.com
+```
+
+# Web Browser Network Stack (Retrieval Command)
+
+Open a web page, and monitor network requests including request sources and destinations, full request and response payloads, timing data, etc...
+
+## Example
+
+Open nytimes.com and get all the externally loaded asset content including JavaScript.
+
+```bash
+requests https://www.nytimes.com/ --responseText
+```
