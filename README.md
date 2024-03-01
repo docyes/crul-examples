@@ -43,14 +43,19 @@ Crul flattens hierarchical data structures into tabular datasets to simplify the
 ````bash
 seed ```json
 {
-  key: "value",
+  key: "root key value",
   nested: {
-    key: "value" 
+    key: "nested key value" 
   }
 }
 ```
 ````
 
+## Result
+
+| key    | nested.key |
+| -------- | ------- |
+| root key value  | nested key value |
 
 
 
